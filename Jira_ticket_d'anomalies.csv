@@ -1,0 +1,236 @@
+﻿Résumé,Clé de ticket,ID de ticket,Type de ticket,État,Clé de projet,Nom du projet,Type de projet,Chef de projet,ID de responsable de projet,Description du projet,Priorité,Résolution,Personne assignée,ID de la personne assignée,Rapporteur,ID de rapporteur,Créateur,ID de créateur,Création,Mise à jour,Dernier affichage,Résolu,Date d'échéance,Votes,Description,Environnement,Observateurs,ID des observateurs,Estimation originale,Estimation restante,Temps consacré,Ratio du travail réel comparé à l'estimation,Σ Estimation originale,Σ Estimation restante,Σ Temps consacré,Niveau de sécurité,Pièce jointe,Pièce jointe,Pièce jointe,Champs personnalisés (Actual end),Champs personnalisés (Actual start),Champs personnalisés (Approbations),Champs personnalisés (Change reason),Champs personnalisés (Change risk),Champs personnalisés (Change type),Champs personnalisés (Domaines prioritaires),Champs personnalisés (Epic Color),Champs personnalisés (Epic Name),Champs personnalisés (Epic Status),Champs personnalisés (Formulaires envoyés),Champs personnalisés (Formulaires ouverts),Champs personnalisés (Formulaires verrouillés),Champs personnalisés (Impact),Champs personnalisés (Issue color),Champs personnalisés (Nombre total de formulaires),Champs personnalisés (Objectifs),Champs personnalisés (Project overview key),Champs personnalisés (Project overview status),Champs personnalisés (Rank),Champs personnalisés (Request Type),Champs personnalisés (Sentiment),Champs personnalisés (Start date),Champs personnalisés (Story Points),Champs personnalisés (Story point estimate),Champs personnalisés (Target end),Champs personnalisés (Target start),Champs personnalisés (Team),Champs personnalisés (Vulnerability),Champs personnalisés ([CHART] Date of First Response),Champs personnalisés ([CHART] Time in Status),Champs personnalisés (development),Catégorie d'état,Catégorie d'état modifiée
+Slide manquant dans le slider de la page d’accueil,UQ724-16,10244,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,High,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,20/avr./26 12:48 AM,20/avr./26 12:48 AM,20/avr./26 12:51 AM,,,0,"Le slider (carrousel) présent sur la page d’accueil ne contient pas tous les éléments attendus. La 4ème image est absente.
+
+*Etapes :* 
+
+* Accéder à la page d’accueil
+* Observer le slider 
+
+*Résultat attendu :*
+
+Le carrousel doit afficher l’ensemble des slides prévus, y compris la 4ème image.
+
+*Résultat obtenu :*
+
+Le carrousel affiche uniquement 3 slides, la 4ème image est manquante.     ",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@58788181,,,,,,,,,,,,,,,,,0|i0004f:,,,,,,,,,,,,,A faire,20/avr./26 12:48 AM
+Le formulaire de contact accepte des valeurs invalides dans les champs 'Nom' et 'Email' sans message d'erreur,UQ724-15,10211,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,Highest,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,17/avr./26 9:05 PM,17/avr./26 9:18 PM,20/avr./26 12:50 AM,,,0,"Lors du remplissage du formulaire de contact, le champ ""Nom"" accepte des caractères spéciaux (ex : @#$%&) et le champ ""Email"" accepte un texte simple sans format valide (ex : ""bonjour""), sans qu'aucun message d'erreur ne soit affiché à l'utilisateur pour l'informer que les valeurs saisies sont incorrectes.
+
+*Etapes :*
+
+* Cliquer sur l’item “Contact” du menu ou scroller jusqu’à la section Contact
+* Remplir le formulaire
+* Saisir des caractères spéciaux dans le champ “Nom” 
+* Saisir une adresse “email” invalide
+* Cliquer sur le bouton “Envoyer”
+
+*Résultat attendu :*
+message d’erreur doit s’afficher
+
+*Résultat obtenu :*
+
+Le champ « Nom » accepte des caractères incorrects sans afficher de message d’erreur.
+
+Le formulaire est soumis sans message d’erreur malgré un “email” invalide.",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,17/avr./26 9:18 PM;4f2e8219-b8ca-4875-955c-1298864c29f5;Capture6.PNG;https://nadiachouiref.atlassian.net/rest/api/3/attachment/content/10115,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1e0e6edf,,,,,,,,,,,,,,,,,0|i00047:,,,,,,,,,,,,,A faire,17/avr./26 9:05 PM
+Le formulaire de contact n'affiche aucun message d'erreur lorsque le champ 'Nom' dépasse 20 caractères,UQ724-14,10178,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,High,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,12/avr./26 12:38 AM,17/avr./26 7:16 PM,18/avr./26 10:06 PM,,,0,"Lors du remplissage du formulaire de contact avec un nom dépassant 20 caractères, le formulaire n'affiche aucun message d'erreur à l'utilisateur après avoir cliqué sur ""Envoyer"". Les champs restent remplis et aucun retour visuel n'est fourni, alors que le serveur retourne bien une erreur de validation.
+
+*Etapes :*
+
+* Cliquer sur l’item “Contact” du menu ou scroller jusqu’à la section Contact 
+* Remplir le formulaire
+* Saisir plus de 20 caractères dans le champ “Nom” 
+* Cliquer sur le bouton “Envoyer”
+
+*Résultat attendu :*
+
+Un message d’erreur doit s’afficher indiquant que la limite de caractères est dépassée.
+
+*Résultat obtenu :* 
+
+Aucun message d'erreur affiché sur la page. Le serveur retourne un 400 Bad Request avec le message {{Contact validation failed: name is longer than the maximum allowed length (20)}}, visible uniquement via Postman.",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,17/avr./26 6:29 PM;4f2e8219-b8ca-4875-955c-1298864c29f5;Capture2.PNG;https://nadiachouiref.atlassian.net/rest/api/3/attachment/content/10113,17/avr./26 6:30 PM;4f2e8219-b8ca-4875-955c-1298864c29f5;Capture3.PNG;https://nadiachouiref.atlassian.net/rest/api/3/attachment/content/10114,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@d5706f8,,,,,,,,,,,,,,,,,0|i0003z:,,,,,,,,,,,,,A faire,12/avr./26 12:38 AM
+Case à cocher inexistante dans le formulaire Contact,UQ724-13,10177,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,Medium,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,11/avr./26 11:56 PM,17/avr./26 7:50 PM,18/avr./26 10:05 PM,,,0,"Le formulaire devrait contenir une case à cocher avant validation, mais celle-ci n’est pas présente sur l’interface.
+
+*Etapes :*
+
+* Cliquer sur l'item ""Contact"" du menu ou scroller jusqu'à cette section
+* Cocher seulement la case d'autorisation et cliquer sur le bouton ""Envoyer""
+
+*Résultat attendu :*
+
+Un message d'erreur s'affiche pour indiquer qu'il manque des informations
+
+*Résultat obtenu :*
+
+La case d’autorisation n’est pas présente sur le site",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1b2a1a78,,,,,,,,,,,,,,,,,0|i0003r:,,,,,,,,,,,,,A faire,11/avr./26 11:56 PM
+"Les événements avec la même date affichent le même emplacement dans ""Nos réalisations""",UQ724-12,10144,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,Medium,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,11/avr./26 1:27 AM,12/avr./26 2:42 AM,18/avr./26 10:04 PM,,,0,"Plusieurs événements ayant la même date affichent le même emplacement, ce qui entraîne des informations incorrectes.
+
+*Étapes :*
+
+* Aller sur la section ""Nos réalisations""
+* Identifier plusieurs événements ayant la même date
+* Cliquer sur ces événements et observer leur emplacement
+
+*Résultat attendu :*
+Chaque événement doit afficher son emplacement correct, même s’ils ont la même date.
+
+*Résultat obtenu :*
+Les événements ayant la même date affichent le même emplacement, ce qui semble incorrect.",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@29d753ae,,,,,,,,,,,,,,,,,0|i0003j:,,,,,,,,,,,,,A faire,11/avr./26 1:27 AM
+"Bloc ""724events"" non visible dans le footer mobile",UQ724-11,10111,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,Medium,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,08/avr./26 11:30 AM,12/avr./26 2:45 AM,18/avr./26 10:03 PM,,,0,"Une partie du footer est manquante en version mobile. La section ""724events"" n’est pas affichée, ce qui rend le contenu incomplet.
+
+*Etapes :*
+
+* Aller à la page d’accueil
+* Réduire la taille de l'écran en mode mobile 
+* Scroller jusqu’au footer
+
+*Résultat attendu :*
+
+La partie “724events” doit apparaître dans le footer
+
+*Résultat obtenu :*
+
+La partie “724events” est absente",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,08/avr./26 11:26 AM;4f2e8219-b8ca-4875-955c-1298864c29f5;Capture.PNG;https://nadiachouiref.atlassian.net/rest/api/3/attachment/content/10042,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@354fc78e,,,,,,,,,,,,,,,,,0|i0003b:,,,,,,,,,,,,,A faire,08/avr./26 11:30 AM
+"Mauvais positionnement de la vignette ""Notre dernière prestation""",UQ724-10,10110,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,High,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,08/avr./26 11:18 AM,17/avr./26 7:45 PM,19/avr./26 2:38 AM,,,0,"La vignette « Notre dernière prestation » est mal positionnée en version mobile. Son alignement n’est pas cohérent avec les autres éléments et elle masque la section contact, notamment le numéro de téléphone, l’adresse postale et l’adresse e-mail.
+
+*Etapes :* 
+
+* Accéder à la page d’accueil 
+* Réduire la taille de l'écran en mode mobile
+* Scroller jusqu'en bas de page
+* Regarder la partie *“Notre dernière prestation”*
+
+*Résultat attendu :*
+
+La vignette doit être correctement positionnée et alignée
+
+*Résultat obtenu :*
+
+La vignette est mal positionnée",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,08/avr./26 11:13 AM;4f2e8219-b8ca-4875-955c-1298864c29f5;Capture.PNG;https://nadiachouiref.atlassian.net/rest/api/3/attachment/content/10040,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@149d14db,,,,,,,,,,,,,,,,,0|i00033:,,,,,,,,,,,,,A faire,08/avr./26 11:18 AM
+Formulaire de contact mal aligné,UQ724-9,10109,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,High,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,08/avr./26 11:07 AM,17/avr./26 7:40 PM,19/avr./26 1:08 PM,,,0,"Le formulaire de contact présente un problème d’affichage en version mobile : les champs sont déformés ou mal alignés, ce qui nuit à la lisibilité lors du remplissage des champs.
+
+*Etapes :*
+
+* Accéder à la page d’accueil
+* Réduire la taille de l'écran en mode mobile
+* Scroller jusqu'à la section *Contact*
+
+*Résultat attendu :*
+
+Le formulaire doit être bien aligné et lisible
+
+*Résultat obtenu :*
+
+Le formulaire est déformé / mal aligné",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,08/avr./26 11:02 AM;4f2e8219-b8ca-4875-955c-1298864c29f5;Capture.PNG;https://nadiachouiref.atlassian.net/rest/api/3/attachment/content/10038,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5012c443,,,,,,,,,,,,,,,,,0|i0002v:,,,,,,,,,,,,,A faire,08/avr./26 11:07 AM
+Menu items manquants (Notre équipe / Contact),UQ724-8,10108,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,Medium,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,08/avr./26 10:48 AM,17/avr./26 7:37 PM,18/avr./26 10:01 PM,,,0,"Certains éléments du menu de navigation sont absents en version mobile. Les sections ""Notre équipe"" et ""Contact"" ne sont pas accessibles.
+
+*Etapes :*
+
+* Accéder à la page d’accueil 
+* Réduire la taille de l’écran en mode mobile
+* Regarder le menu de navigation
+
+*Résultat attendu :*
+
+Les menus *Notre équipe* et *Contact* doivent apparaître dans le menu
+
+*Résultat obtenu :*
+
+Les menus *Notre équipe* et *Contact* sont absents",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,08/avr./26 10:48 AM;4f2e8219-b8ca-4875-955c-1298864c29f5;Capture.PNG;https://nadiachouiref.atlassian.net/rest/api/3/attachment/content/10036,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@498bec01,,,,,,,,,,,,,,,,,0|i0002n:,,,,,,,,,,,,,A faire,08/avr./26 10:48 AM
+Indicateur du slider n’apparaît pas pour les images 1 et 2,UQ724-7,10075,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,Low,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,06/avr./26 11:23 PM,12/avr./26 2:43 AM,18/avr./26 10:00 PM,,,0,"Pour les images 1 et 2, le cercle reste blanc et n’indique pas l’image active. Seule l’image 3 affiche correctement le cercle bleu, ce qui empêche d’identifier visuellement la position actuelle dans le slider
+
+*Étapes :*
+
+* Accéder à la page d'accueil du site
+* Observer les 3 cercles indicateurs lorsque les 3 images du slider défilent
+
+*Résultat attendu :*
+Le cercle correspondant à l'image affichée doit être rempli en bleu pour indiquer la position dans le slider.
+
+*Résultat obtenu :*
+Pour les images 1 et 2, le cercle reste blanc et n’indique pas l’image active.
+Seule l’image 3 affiche correctement le cercle bleu.",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,08/avr./26 9:09 AM;4f2e8219-b8ca-4875-955c-1298864c29f5;Capture.PNG;https://nadiachouiref.atlassian.net/rest/api/3/attachment/content/10034,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5324b3e4,,,,,,,,,,,,,,,,,0|i0002f:,,,,,,,,,,,,,A faire,06/avr./26 11:23 PM
+"Navigation vers la vignette de ""Notre dernière prestation"" provoque une erreur",UQ724-6,10074,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,High,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,06/avr./26 10:07 PM,14/avr./26 9:50 PM,19/avr./26 2:45 AM,,,0,"La navigation vers la vignette ""Notre dernière prestation"" provoque une erreur technique. Une page d’erreur s’affiche au lieu de charger le contenu attendu.
+
+*Étapes :*
+
+* Aller sur la page d’accueil
+* Scroller jusqu'en bas de page
+* Cliquer sur une la vignette “Notre dernière prestation”
+
+*Résultat attendu :*
+La page correspondant à la vignette s’ouvre avec ses informations
+
+*Résultat obtenu :*
+Une page d’erreur s’affiche avec le message :
+{{Unhandled Thrown Error - Cannot read properties of undefined (reading 'map')}}",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,14/avr./26 9:48 PM;4f2e8219-b8ca-4875-955c-1298864c29f5;Capture (aa7710e7-fa81-4067-b085-ff6085042b46).PNG;https://nadiachouiref.atlassian.net/rest/api/3/attachment/content/10075,06/avr./26 10:01 PM;4f2e8219-b8ca-4875-955c-1298864c29f5;Capture.PNG;https://nadiachouiref.atlassian.net/rest/api/3/attachment/content/10001,14/avr./26 9:50 PM;4f2e8219-b8ca-4875-955c-1298864c29f5;Capture1.PNG;https://nadiachouiref.atlassian.net/rest/api/3/attachment/content/10076,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4f0d601b,,,,,,,,,,,,,,,,,0|i00027:,,,,,,,,,,,,,A faire,06/avr./26 10:07 PM
+Le formulaire de contact n'affiche aucun message de confirmation après un envoi réussi,UQ724-5,10041,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,High,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,06/avr./26 2:11 AM,15/avr./26 1:00 AM,19/avr./26 2:55 AM,,,0,"Après avoir rempli tous les champs du formulaire de contact et cliqué sur ""Envoyer"", aucun message de confirmation n'est affiché à l'utilisateur. Pourtant, le serveur traite bien la requête et retourne un statut 201 avec le message ""Merci de nous avoir contacté !"", comme confirmé via Postman.
+
+*Etapes :*
+
+* Cliquer sur l'item ""Contact"" du menu ou scroller jusqu'à cette section
+* Remplir toutes les informations et cliquer sur le bouton ""Envoyer""
+
+*Résultat attendu :*
+
+Le formulaire est envoyé et un message de succès s'affiche
+
+*Résultat obtenu :*
+
+Le formulaire reste affiché avec les champs remplis, aucun message de succès n'apparaît sur la page.",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,15/avr./26 12:53 AM;4f2e8219-b8ca-4875-955c-1298864c29f5;Capture.PNG;https://nadiachouiref.atlassian.net/rest/api/3/attachment/content/10078,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@11a7d391,,,,,,,,,,,,,,,,,0|i0001z:,,,,,,,,,,,,,A faire,06/avr./26 2:11 AM
+Le formulaire de contact n'affiche aucun message d'erreur lors de l'envoi incomplet,UQ724-4,10040,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,Medium,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,06/avr./26 2:05 AM,17/avr./26 12:56 AM,18/avr./26 10:12 PM,,,0,"Lors du remplissage d'un seul champ du formulaire de contact et en cliquant sur le bouton ""Envoyer"", aucun message d'erreur n'est affiché à l'utilisateur. Le formulaire reste silencieux alors qu'il devrait indiquer les champs obligatoires manquants. Une erreur 400 Bad Request est visible uniquement dans la console du navigateur.
+
+*Etapes :* 
+
+* Cliquer sur l'item ""Contact"" du menu ou scroller jusqu'à cette section
+* Remplir seulement le champ ""Nom""/“prénom”/”Personnel/Entreprise”/”Email”/”Message” et cliquer sur le bouton ""Envoyer""
+
+*Résultat attendu :*
+
+Un message d'erreur s'affiche pour indiquer qu'il manque des informations
+
+*Résultat obtenu :*
+
+Aucune action ne se produit. Aucun message d’erreur ne s’affiche",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,14/avr./26 11:33 PM;4f2e8219-b8ca-4875-955c-1298864c29f5;Capture.PNG;https://nadiachouiref.atlassian.net/rest/api/3/attachment/content/10077,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@57620398,,,,,,,,,,,,,,,,,0|i0001r:,,,,,,,,,,,,,A faire,06/avr./26 2:05 AM
+"Le filtre par catégorie de la section ""Nos réalisations"" ne fonctionne pas",UQ724-3,10039,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,Medium,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,06/avr./26 1:49 AM,10/avr./26 9:37 PM,18/avr./26 9:56 PM,,,0,"Le filtre par catégorie ne fonctionne pas dans la section ""Nos réalisations"". La sélection d’une catégorie ne modifie pas les éléments affichés.
+
+*Etapes :* 
+
+* Cliquer sur l'item ""Nos réalisations"" du menu ou scroller jusqu'à cette section
+* Cliquer dans la liste de choix et sélectionner une catégorie
+
+*Résultat attendu :*
+
+Les vignettes affichées sont filtrées en fonction de la catégorie choisie
+
+*Résultat obtenu :*
+
+La sélection d’une catégorie ne change pas les vignettes affichées.",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4b8af7e1,,,,,,,,,,,,,,,,,0|i0001j:,,,,,,,,,,,,,A faire,06/avr./26 1:49 AM
+La pagination ne change pas les réalisations affichées,UQ724-2,10038,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,High,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,05/avr./26 11:57 PM,10/avr./26 9:35 PM,18/avr./26 9:55 PM,,,0,"La pagination de la section ""Nos réalisations"" ne fonctionne pas. Lorsque l’utilisateur clique sur une autre page, le contenu affiché reste identique et ne change pas.
+
+*Etapes :*
+
+* Cliquer sur l'item ""Nos réalisations"" du menu ou scroller jusqu'à cette section
+* Cliquer sur la page suivante (page 2) pour accéder aux réalisations suivantes
+
+*Résultat attendu :*
+
+Les réalisations suivantes s'affichent
+
+*Résultat obtenu :*
+
+La pagination ne change pas le contenu de la page : Lorsque je clique sur le numéro *2* dans la pagination, les mêmes vignettes restent affichées. Le contenu de la page ne change pas.",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@269f1d7b,,,,,,,,,,,,,,,,,0|i0001b:,,,,,,,,,,,,,A faire,05/avr./26 11:57 PM
+L'inscription à un événement échoue même avec tous les champs correctement remplis de formulaire de réservation ,UQ724-1,10037,Bug,À faire,UQ724,724 events,software,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,Highest,,,,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,05/avr./26 11:50 PM,17/avr./26 7:20 PM,19/avr./26 1:09 PM,,,0,"Lors du remplissage complet du formulaire d'inscription à un événement et en cliquant sur ""Envoyer"", une erreur 400 Bad Request est retournée. Le serveur attend un nombre pour le champ {{surname}} alors qu'il devrait accepter du texte. Le formulaire reste affiché sans aucun message d'erreur visible pour l'utilisateur.
+
+*Etapes :*
+
+* Aller à la page d'accueil en cliquant sur le logo ""724events"" en haut à gauche
+* Cliquer sur n’importe quelle image du slider
+* Remplir le formulaire de réservation
+* Cliquer sur le bouton ""Envoyer""
+
+*Résultat attendu :*
+
+Le formulaire de réservation est envoyé et un message de succès s'affiche
+
+*Résultat obtenu :*
+
+Aucun message de confirmation n’apparaît et les champs du formulaire restent remplis ",,Nadia Chouiref,712020:94dfbc98-614a-4cc6-a177-05801f62c212,,,,,,,,,15/avr./26 1:06 AM;4f2e8219-b8ca-4875-955c-1298864c29f5;Capture.PNG;https://nadiachouiref.atlassian.net/rest/api/3/attachment/content/10079,15/avr./26 1:36 AM;4f2e8219-b8ca-4875-955c-1298864c29f5;Capture1.PNG;https://nadiachouiref.atlassian.net/rest/api/3/attachment/content/10080,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@134aa92c,,,,,,,,,,,,,,,,,0|i00013:,,,,,,,,,,,,,A faire,05/avr./26 11:50 PM
